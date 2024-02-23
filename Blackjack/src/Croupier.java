@@ -1,4 +1,4 @@
-class Croupier extends Personne {
+class Croupier extends Personne  implements CroupierInterface{
     int valeurTotalLimit;
 
     public Croupier(int valeurTotalLimit,String username) {

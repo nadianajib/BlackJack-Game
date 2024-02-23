@@ -1,19 +1,19 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Collection;
-public class paquetCarte {
+
+public class paquetCarte implements paquetCarteInterface {
     List<Carte> listCartes;
 
 
-    public void PaquetCarte() {
+    public void paquetCarte() {
         this.listCartes = new ArrayList<>();
-        initialiserPaquet();
+        initialiserpaquet();
 
 
     }
-
-    private void initialiserPaquet() {
+@Override
+    public void initialiserpaquet() {
         String[] types = {"Carreau", "Coeur", "Pique", "Trèfle"};
         String[] valeurs = {"As", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Valet", "Dame", "Roi"};
         for (String type : types) {
@@ -22,7 +22,7 @@ public class paquetCarte {
             }
         }
         mélanger();    }
-
+    @Override
     public void mélanger() {
         Collections.shuffle(listCartes);
 

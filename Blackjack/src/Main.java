@@ -1,6 +1,6 @@
     import java.util.ArrayList;
 import java.util.List;
-class Main {
+class Main implements MainInterface {
     private int valeurTotal;
     private String nom;
     private int nbCartes;
@@ -12,6 +12,8 @@ class Main {
         this.nbCartes = 0;
         this.listCartes = new ArrayList<>();
     }
+@Override
+
     public void ajouterCarte(Carte carte) {
         listCartes.add(carte);
 

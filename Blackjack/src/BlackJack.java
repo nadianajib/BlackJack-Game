@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class BlackJack {
     public static void main(String[] args) {
+
         afficherMenu();
     }
 
@@ -35,15 +36,15 @@ public class BlackJack {
     }
 
     public static void jouer() {
-        // Mettez ici le code pour commencer à jouer au Blackjack
+        //  commencer à jouer au Blackjack
         System.out.println("Bienvenue au jeu Blackjack !");
 
         afficherMenuJeu();
     }
 
     public static void consulterSoldeJetons() {
-        // Mettez ici le code pour consulter le solde de jetons du joueur
-        System.out.println("Votre solde de jetons est : 200"); // Remplacez XXX par le solde actuel
+        //  le solde de jetons du joueur
+        System.out.println("Votre solde de jetons est : 200");
     }
 
     public static void afficherMenuJeu() {
@@ -60,11 +61,11 @@ public class BlackJack {
 
             switch (choix) {
                 case 1:
-                    // Mettez ici le code pour le choix "Hit"
+                    //  le choix "Hit"
                     System.out.println("Tirer une nouvelle carte...");
                     break;
                 case 2:
-                    // Mettez ici le code pour le choix "Stand"
+                    // le choix "Stand"
                     System.out.println("Rester avec la main actuelle...");
                     break;
                 case 3:

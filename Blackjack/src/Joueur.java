@@ -1,4 +1,4 @@
-class Joueur extends Personne {
+class Joueur extends Personne implements JoueurInterface {
     private Main main;
     private int solde;
 
@@ -7,11 +7,11 @@ class Joueur extends Personne {
         this.solde = solde;
         this.main = new Main();
     }
-
+@Override
     public void placerMise(int mise) {
         solde -= mise;
     }
-
+@Override
     public void recevoirCarte(Carte carte) {
         main.ajouterCarte(carte);
     }

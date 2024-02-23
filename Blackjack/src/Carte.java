@@ -1,5 +1,5 @@
 
-    class Carte {
+    class Carte implements CarteInterface{
        private String type;
       private  String valeur;
 

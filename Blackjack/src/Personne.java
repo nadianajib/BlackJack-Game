@@ -1,7 +1,7 @@
 import com.sun.tools.javac.Main;
 
 
-class Personne {
+class Personne implements PersonneInterface {
     String username;
     Main main;
 
